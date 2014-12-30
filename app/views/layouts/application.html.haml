@@ -1,0 +1,18 @@
+!!!
+/[if IEMobile 7 ] <html class="no-js iem7">
+/ [if (gt IEMobile 7)|!(IEMobile)]><!
+%html.no-js
+  / <![endif]
+  %head
+    %link{:rel => 'shortcut icon', :href => '/assets/favicon.ico' }
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %link{:rel => 'stylesheet', :href => 'http://fonts.googleapis.com/css?family=Open+Sans', :type => 'text/css'}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}/
+  %body
+    %div.container
+
+      .box
+        = yield
