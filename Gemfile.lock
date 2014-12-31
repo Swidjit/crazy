@@ -36,6 +36,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    contact_us (0.5.4)
+      rails (>= 4.0.0)
     erubis (2.7.0)
     execjs (2.2.2)
     haml (4.0.5)
@@ -131,6 +133,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  contact_us (~> 0.5.1)
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
