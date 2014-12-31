@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.slimmenu.min
+//= require jquery.fancybox
+//= require helpers/jquery.fancybox-media
+//= require jquery.youtubevideogallery
 
 $(document).ready(function(){
 	$('#navigation').slimmenu(
@@ -25,4 +28,20 @@ $(document).ready(function(){
 	    indentChildren: false,
 	    childrenIndenter: '&nbsp;'
 	});
+	$(".fancybox").fancybox({
+	});
+	$('.fancybox-media').fancybox({
+        openEffect: 'none',
+        closeEffect: 'none',
+        helpers: {
+          media: {}
+        }
+    });
+
+    $("ul.youtube-video-gallery").youtubeVideoGallery({
+    	  plugin:'fancybox',
+    	  assetFolder: '/assets',
+	      apiFallbackUrl: 'https://www.youtube.com/results?search_query=dance+tango',
+	      apiUrl: 'https://gdata.youtube.com/feeds/api/videos?author=UCPtJaV3Q9t8Asf1yDW4WxcQ&v=2&orderby=updated&alt=jsonc'
+	  });
 });
