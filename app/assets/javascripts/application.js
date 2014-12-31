@@ -13,4 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery.slimmenu.min
+
+$(document).ready(function(){
+	$('#navigation').slimmenu(
+	{
+	    resizeWidth: '479',
+	    collapserTitle: 'CrazyDancingGuy',
+	    animSpeed: 'medium',
+	    easingEffect: null,
+	    indentChildren: false,
+	    childrenIndenter: '&nbsp;'
+	});
+});
