@@ -16,6 +16,9 @@ ContactUs.setup do |config|
   # Configure the form to ask for the users name.
   config.require_name = false
 
+  config.success_redirect = '/pages/thanks'
+  config.form_gem = 'formtastic'
+
   # Configure the form to ask for a subject.
   config.require_subject = false
 

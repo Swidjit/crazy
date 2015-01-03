@@ -12,7 +12,8 @@
  *= require slimmenu.min
  *= require jquery.fancybox
  *= require youtube-video-gallery
-
+ *= require formtastic
+ *= require formtastic-changes
 */
 body {
 	background-color: #111;
@@ -83,6 +84,11 @@ h2,h3,h3 {
 }
 #desc p {
 	text-align: left;
+}
+
+#padded-content {
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 @media screen and (min-width:960px) {

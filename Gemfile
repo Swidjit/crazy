@@ -22,6 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 gem 'contact_us', '~> 0.5.1'
+gem 'formtastic', '~> 3.0'
 
 
 

@@ -40,6 +40,8 @@ GEM
       rails (>= 4.0.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    formtastic (3.1.2)
+      actionpack (>= 3.2.13)
     haml (4.0.5)
       tilt
     haml-rails (0.6.0)
@@ -134,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   contact_us (~> 0.5.1)
+  formtastic (~> 3.0)
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
